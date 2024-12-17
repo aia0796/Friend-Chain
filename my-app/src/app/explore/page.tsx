@@ -76,34 +76,36 @@ const explore = () => {
   const withdraw = async () => {
     const claimAmt = 50;
     const contractAddress = "0x0b87deB269843B6B66a6658E0F92576BD4AF0600"
-    const provider = new BrowserProvider(window.ethereum);
+    if (window.ethereum != undefined) {
+      const provider = new BrowserProvider(window.ethereum);
 
-    const signer = await provider.getSigner();
-    const address = await signer.getAddress();
-    console.log("Wallet Address:", address);
-    const humorTokenContract = new ethers.Contract(contractAddress, youXiangToken.abi, signer)
-    // mint();
-    console.log(claimAmt, "========inside withdraw===")
+      const signer = await provider.getSigner();
+      const address = await signer.getAddress();
+      console.log("Wallet Address:", address);
+      const humorTokenContract = new ethers.Contract(contractAddress, youXiangToken.abi, signer)
+      // mint();
+      console.log(claimAmt, "========inside withdraw===")
 
-    // await (await humorTokenContract.donate(address, "0x94A7Af5edB47c3B91d1B4Ffc2CA535d7aDA8CEDe", ethers.parseUnits(claimAmt.toString(), 18))).wait();
-    await (await humorTokenContract.mint(address, ethers.parseUnits(claimAmt.toString(), 18))).wait();
-
+      // await (await humorTokenContract.donate(address, "0x94A7Af5edB47c3B91d1B4Ffc2CA535d7aDA8CEDe", ethers.parseUnits(claimAmt.toString(), 18))).wait();
+      await (await humorTokenContract.mint(address, ethers.parseUnits(claimAmt.toString(), 18))).wait();
+    }
   }
   const donate = async () => {
     const claimAmt = 5;
     const contractAddress = "0x0b87deB269843B6B66a6658E0F92576BD4AF0600"
-    const provider = new BrowserProvider(window.ethereum);
+    if (window.ethereum != undefined) {
+      const provider = new BrowserProvider(window.ethereum);
 
-    const signer = await provider.getSigner();
-    const address = await signer.getAddress();
-    console.log("Wallet Address:", address);
-    const humorTokenContract = new ethers.Contract(contractAddress, youXiangToken.abi, signer)
-    // mint();
-    console.log(claimAmt, "========inside withdraw===")
+      const signer = await provider.getSigner();
+      const address = await signer.getAddress();
+      console.log("Wallet Address:", address);
+      const humorTokenContract = new ethers.Contract(contractAddress, youXiangToken.abi, signer)
+      // mint();
+      console.log(claimAmt, "========inside withdraw===")
 
-    await (await humorTokenContract.transfer("0x94A7Af5edB47c3B91d1B4Ffc2CA535d7aDA8CEDe", ethers.parseUnits(claimAmt.toString(), 18))).wait();
-    // await (await humorTokenContract.mint(address, ethers.parseUnits(claimAmt.toString(), 18))).wait();
-
+      await (await humorTokenContract.transfer("0x94A7Af5edB47c3B91d1B4Ffc2CA535d7aDA8CEDe", ethers.parseUnits(claimAmt.toString(), 18))).wait();
+      // await (await humorTokenContract.mint(address, ethers.parseUnits(claimAmt.toString(), 18))).wait();
+    }
   }
 
   // Sample friend suggestions data
