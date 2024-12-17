@@ -4,9 +4,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Add FRIEND Token Contract Address to your AIA TESTNET CHAIN in wallet
 
-CONTRACT ADDRESS = "0x3486e41C499932DD8d395b6aF96FDebEC2Fd8d92"
+CONTRACT ADDRESS = "0x0b87deB269843B6B66a6658E0F92576BD4AF0600"
 
-[Verify Here](https://testnet.aiascan.com/token/0x3486e41C499932DD8d395b6aF96FDebEC2Fd8d92)
+[Verify Here](https://testnet.aiascan.com/token/0x0b87deB269843B6B66a6658E0F92576BD4AF0600)
 
 First, run the development server:
 
