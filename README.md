@@ -2,11 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-## Add FRIEND Token Contract Address to your AIA TESTNET CHAIN in wallet
+## Add FRIEND Token Contract Address to your MANTLE TESTNET CHAIN in wallet
 
 CONTRACT ADDRESS = "0x0b87deB269843B6B66a6658E0F92576BD4AF0600"
 
-[Verify Here](https://testnet.aiascan.com/token/0x0b87deB269843B6B66a6658E0F92576BD4AF0600)
+[Verify Here](https://explorer.sepolia.mantle.xyz/address/0x0b87deB269843B6B66a6658E0F92576BD4AF0600)
 
 First, run the development server:
 
@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Friend-Chain
 
-**Friend-Chain**: Your Web3 solution to find and rent friends for online or offline companionship using FRIEND tokens on the AIA Chain.
+**Friend-Chain**: Your Web3 solution to find and rent friends for online or offline companionship using FRIEND tokens on the MANTLE Chain.
 
 ## Introduction
 Friend-Chain is designed to bridge the gap between those seeking companionship and individuals offering their time and company. Whether you need a friend for a chat, an event, or just some support, Friend-Chain has got you covered.
@@ -65,7 +65,7 @@ Friend-Chain is designed to bridge the gap between those seeking companionship a
 
 ## Technical Details
 - **FrameWork**: Nextjs
-- **Blockchain**: AIA Chain
+- **Blockchain**: MANTLE Chain
 - **Dependencies**: 
   - etherjs for blockchain interaction
   - React.js for frontend development

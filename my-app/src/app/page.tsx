@@ -160,7 +160,7 @@ const ExperimentalLayout = () => {
             </div>
             <div className="space-y-8">
               <p className="text-lg text-gray-300" style={{ fontFamily: 'Raleway' }}>
-                Our platform leverages AIA chain for transparent transactions and verified identities, 
+                Our platform leverages MANTLE chain for transparent transactions and verified identities, 
                 creating a trusted environment for forming new friendships.
               </p>
             </div>

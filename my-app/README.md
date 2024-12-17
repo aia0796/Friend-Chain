@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-## Add Contract Address to your AIA TESTNET CHAIN in wallet
+## Add Contract Address to your MANTLE TESTNET CHAIN in wallet
 
 CONTRACT ADDRESS = "0x0b87deB269843B6B66a6658E0F92576BD4AF0600"
 
